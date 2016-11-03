@@ -51,7 +51,9 @@ The Sections component has been deliberately left unconstrained to maximise re-u
 
 definition
     COMPOSITION[id1.1] matches {    -- Report
-        content
+        content matches {
+            use_archetype SECTION[id0.2, openEHR-EHR-SECTION.ovl-casereport-medication-001.v1.0.0]
+        }
     }
 
 terminology
@@ -66,6 +68,32 @@ terminology
             ["id1.1"] = <
                 text = <"Poročilo">
                 description = <"*Document to communicate information to others, commonly in response to a request from another party.(en)">
+            >
+        >
+    >
+
+------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-casereport-medication-001.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.medication.v1.0.0
+
+definition
+    SECTION[id1.1] 
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Medication">
+                description = <"A section containing medication orders and their associated actions.">
+            >
+        >
+        ["sl"] = <
+            ["id1.1"] = <
+                text = <"*Medication(en)">
+                description = <"*A section containing medication orders and their associated actions.(en)">
             >
         >
     >
