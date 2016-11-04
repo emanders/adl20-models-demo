@@ -1,0 +1,15 @@
+{
+  "templates" : [ {
+    "id" : "openEHR-EHR-COMPOSITION.casereport.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Report",
+    "path" : "templates/openEHR-EHR-COMPOSITION.casereport.v1.adlt",
+    "sha" : "c169e874bdbdd00da0edc826c36232b17929b62f"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.cbs.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.cbs.v1.adlt",
+    "sha" : "d2f4c9fedd89835d7dfbc4b66c382dc3fd11f163"
+  } ]
+}
